@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppFormType, FormType, ServiceFormHelper } from "./service";
-import { TypedFormHelperComponent } from "angular-typed-forms-helper";
+import { TypedFormHelperComponent } from "ngx-typed-forms-helper";
 import { isEnableStream } from "./streams/is-enable.stream";
 
 @Component({

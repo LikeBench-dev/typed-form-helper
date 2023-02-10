@@ -7,10 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lib:patch": "cd ./projects/angular-typed-forms-helper && npm version patch && cd../../",
-    "lib:build": "ng build angular-typed-forms-helper",
-    "lib:watch": "ng build angular-typed-forms-helper --watch",
-    "lib:publish": "npm run lib:build && cd dist/angular-typed-forms-helper && npm pack && npm publish"
+    "lib:patch": "cd ./projects/ngx-typed-forms-helper && npm version --no-git-tag-version patch && cd ../../",
+    "lib:build": "ng build ngx-typed-forms-helper",
+    "lib:watch": "ng build ngx-typed-forms-helper --watch",
+    "lib:publish": "npm run lib:patch && npm run lib:build && cd dist/ngx-typed-forms-helper && npm pack && npm publish"
   },
   "private": true,
   "dependencies": {

@@ -94,23 +94,23 @@
         }
       }
     },
-    "angular-typed-forms-helper": {
+    "ngx-typed-forms-helper": {
       "projectType": "library",
-      "root": "projects/angular-typed-forms-helper",
-      "sourceRoot": "projects/angular-typed-forms-helper/src",
+      "root": "projects/ngx-typed-forms-helper",
+      "sourceRoot": "projects/ngx-typed-forms-helper/src",
       "prefix": "tfh",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/angular-typed-forms-helper/ng-package.json"
+            "project": "projects/ngx-typed-forms-helper/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/angular-typed-forms-helper/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-typed-forms-helper/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/angular-typed-forms-helper/tsconfig.lib.json"
+              "tsConfig": "projects/ngx-typed-forms-helper/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -118,7 +118,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/angular-typed-forms-helper/tsconfig.spec.json",
+            "tsConfig": "projects/ngx-typed-forms-helper/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"

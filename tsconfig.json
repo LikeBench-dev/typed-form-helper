@@ -3,8 +3,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "angular-typed-forms-helper": [
-        "dist/angular-typed-forms-helper"
+      "ngx-typed-forms-helper": [
+        "dist/ngx-typed-forms-helper"
       ]
     },
     "baseUrl": "./",
