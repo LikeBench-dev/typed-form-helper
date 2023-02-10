@@ -1,0 +1,24 @@
+<div *ngIf="form">
+  <form [formGroup]="form" tfh-submit-helper>
+    <input type="checkbox" formControlName="isEnable">
+    <input formControlName="title" tfh-control-error>
+    <div *ngIf="form.controls.number.enabled">
+      <input formControlName="number" tfh-control-set tfh-control-error>
+    </div>
+    <div formGroupName="objObj">
+      <input formControlName="test1">
+      <input formControlName="nuxt1">
+    </div>
+    <div formArrayName="arrStr" *ngFor="let item of form.controls.arrStr.controls">
+      <input [formControl]="item">
+    </div>
+      <div formArrayName="arrObj" *ngFor="let group of form.controls.arrObj.controls">
+        <div [formGroup]="group">
+          <input [formControl]="group.controls.title">
+          <input [formControl]="group.controls.desc">
+        </div>
+      </div>
+    <button (click)="showInfo()">Show info form</button>
+  </form>
+</div>
+
